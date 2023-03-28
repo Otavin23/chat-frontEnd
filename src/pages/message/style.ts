@@ -10,8 +10,13 @@ export const mainBackground = styled.main`
 export const chatContent = styled.div`
   height: 100%;
   display: flex;
-
+  justify-content: space-between;
 `
+
+export const groupMessagesMenu = styled.div`
+  display: flex;
+`
+
 export const menuAside = styled.aside`
   background: #081C34;
   height: 100%;
@@ -128,8 +133,76 @@ export const listPeopleMessages = styled.ul`
 
 `
 
-export const chatUserPerson = styled.div``
+export const chatUserPerson = styled.div`
+  width:75%;
+  height: 100%;
+  padding: 1rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`
 
-export const  chatUserInformationPerson = styled.div``
+export const  chatUserInformationPerson = styled.div`
+  display: flex;
+  align-items: center;
 
-export const mainChatMessage = styled.div``
+  .background__userMessage{
+    background: #A9A9A9;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title__namePersonMessage{
+    margin: 0 0 0 1rem;
+  }
+`
+
+export const mainChatMessage = styled.div`
+  width: 100%;
+  height: 100%;
+  background: #E9E9F3;
+  margin: 1rem 0 0 0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: relative;
+`
+
+export const groupTextMessage = styled.div``
+
+export const backgroundMessageSend = styled.div`
+  display: flex;
+  justify-content: end;
+  margin: 1rem 0;
+
+`
+
+export const messageSend = styled.p`
+  background: #6785FF;
+  padding: 0.7rem 1rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: 16px;
+`
+
+export const backgroundMessageReceive = styled.div`
+  display: flex;
+  justify-content: start;
+  margin: 1rem 0;
+`
+
+export const messageReceive = styled.p`
+  background: #fff;
+  padding: 0.7rem 1rem;
+  color: #CBCBCB;
+  border-radius: 0.5rem;
+  font-size: 16px;
+`
+
+
+export const InputSendMessage = styled.div``
+
+export const buttonSendMessage = styled.button``

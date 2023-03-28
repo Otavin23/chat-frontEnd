@@ -1,7 +1,20 @@
 import { Link } from "react-router-dom";
 import * as S from "./style";
+import axios from "axios";
 
 const Register = () => {
+  axios
+    .post("http://localhost:3000/user/register", {
+      firstName: "Santos",
+      lastName: "Dumont",
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.error(error);
+    });
+
   return (
     <S.mainBackground>
       <S.mainContainer>

@@ -1,7 +1,19 @@
 import { Link } from "react-router-dom";
 import * as S from "./style";
+import axios from "axios";
 
 const Login = () => {
+  axios
+    .post("http://localhost:3000/user/", {
+      firstName: "Santos",
+      lastName: "Dumont",
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.error(error);
+    });
   return (
     <S.mainBackground>
       <S.mainContainer>
